@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  view:
+    build:
+      context: .
+    container_name: view
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "5173:5173"
